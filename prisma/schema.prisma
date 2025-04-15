@@ -75,6 +75,9 @@ model Offer {
   applyDate     DateTime
   location      String
   status        Status         @default(PENDING)
+  isArchived    Boolean        @default(false)
+  isFavorite    Boolean        @default(false)
+  description   String?
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
   notifications Notification[]
