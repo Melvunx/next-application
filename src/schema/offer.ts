@@ -26,3 +26,4 @@ export const OfferCreateSchema = z.object({
 });
 
 export type OfferCreateType = z.infer<typeof OfferCreateSchema>;
+
