@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <section>
       <div className="flex w-full">
-        <Header />
+        <Header user={session.user} />
         {session.user && (
           <Button onClick={async () => await signOut()}>Déconnexion</Button>
         )}
